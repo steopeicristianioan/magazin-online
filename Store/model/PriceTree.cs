@@ -32,7 +32,7 @@ namespace Store.model
             for(int i = all.Count - 2; i>=0; i--)
             {
                 ct++;
-                if (ct % 2 == 0)
+                if (ct % 2 == 1 && ct > 1)
                     roots.Dequeue();
                 tree.add(all[roots.Peek()], all[i]);
                 roots.Enqueue(i);            

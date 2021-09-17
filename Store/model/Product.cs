@@ -50,7 +50,7 @@ namespace Store.model
         {
             //return "Product ID: " + id.ToString() + "\nName: " + name + "\nPrice: " + price.ToString() + "\nStock: " + stock.ToString()
             //+ "\nDescription: " + description + "\nCreated at: " + created_at.ToString("f");
-            return name;
+            return id.ToString();
         }
         public override bool Equals(object obj)
         {
