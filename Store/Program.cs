@@ -19,7 +19,7 @@ namespace ComplexStore
         [STAThread]
         static void Main()
         {
-            //Application.Run(new MainForm());
+            Application.Run(new MainForm());
 
             //Category_OptionRepository category_OptionRepository = new Category_OptionRepository();
             //OptionRepository optionRepository = new OptionRepository();

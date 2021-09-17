@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
 using generics.NETFramework;
+using FontAwesome.Sharp;
 
 namespace Store.view
 {
@@ -18,9 +19,12 @@ namespace Store.view
         private PriceTree tree;
         private TreeNode<Product> root;
         private OrderDetailRepository orderDetailRepository;
+        private IconButton button;
         public ViewPriceTree(MainForm mainForm, Control parent, 
             OrderDetailRepository orderDetailRepository, Size size)
         {
+            button = new IconButton();
+
             this.mainForm = mainForm;
             this.Parent = parent;
             this.orderDetailRepository = orderDetailRepository;
@@ -32,6 +36,9 @@ namespace Store.view
             setHeader();
             setAside();
             setMain();
+
+            int startX = 10;
+            loadTree(root, ref startX, 0);
         }
 
         protected override void setHeader()
@@ -44,6 +51,7 @@ namespace Store.view
             main.Size = this.Size;
             main.Location = new Point(0, 0);
             main.BackColor = Color.Red;
+            main.AutoScroll = true;
         }
         protected override void setAside()
         {
@@ -55,18 +63,17 @@ namespace Store.view
         {
             if (root == null)
                 return;
-            x += 5;
-            loadTree(root.Right, ref x, y);
-            for (int i = 5; i < x; i++)
-            {
-                y += 10;
-                ProductCard card = new ProductCard(false, mainForm, orderDetailRepository,
-                    Main, root.Data, new Size(50, 50));
-                card.Location = new Point(x, y);
-                card.load();
-                card.Price.Text = root.Data.Price.ToString() + " $";
-            }
+            y += 10;
             loadTree(root.Left, ref x, y);
+            x += 100;
+            int newY = 0;
+            for (int i = 10; i < y; i++)
+                newY += 16;
+            TreeProductCard card = new TreeProductCard(main, root.Data);
+            card.Location = new Point(x, newY);
+            //card.load();
+            //card.Price.Text = root.Data.Price.ToString() + " $";
+            loadTree(root.Right, ref x, y);
         }
     }
 }

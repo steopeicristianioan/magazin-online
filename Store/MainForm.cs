@@ -24,9 +24,9 @@ namespace Store
         public MainForm()
         {
             InitializeComponent();
-            //this.MinimumSize = this.MaximumSize = new Size(1278, 678);
+            this.MinimumSize = this.MaximumSize = new Size(1278, 678);
             childs = new Stack<Form>();
-            this.Size = new Size(600, 500);
+            //this.Size = new Size(600, 500);
             this.Text = "";
             this.Icon = null;
         }
@@ -38,7 +38,8 @@ namespace Store
         }
         private void actions()
         {
-            openChild(new ViewLogin(this, this.Size), this);
+            //openChild(new ViewLogin(this, this.Size), this);
+            openChild(new ViewPriceTree(this, this, new repository.OrderDetailRepository(), this.Size), this);
         }
 
 
