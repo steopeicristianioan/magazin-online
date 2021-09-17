@@ -1,0 +1,142 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\C#\\Desktop\\ComplexStore\\Tests\\Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\bazeDeDate\\DataAccessLibrary.NETFramework\\DataAccessLibrary.NETFramework\\DataAccessLibrary.NETFramework.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\bazeDeDate\\DataAccessLibrary.NETFramework\\DataAccessLibrary.NETFramework\\DataAccessLibrary.NETFramework.csproj",
+        "projectName": "DataAccessLibrary.NETFramework",
+        "projectPath": "C:\\bazeDeDate\\DataAccessLibrary.NETFramework\\DataAccessLibrary.NETFramework\\DataAccessLibrary.NETFramework.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\C#\\Desktop\\ComplexStore\\ComplexStore\\ComplexStore.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\C#\\Desktop\\ComplexStore\\ComplexStore\\ComplexStore.csproj",
+        "projectName": "ComplexStore",
+        "projectPath": "C:\\C#\\Desktop\\ComplexStore\\ComplexStore\\ComplexStore.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\bazeDeDate\\DataAccessLibrary.NETFramework\\DataAccessLibrary.NETFramework\\DataAccessLibrary.NETFramework.csproj": {
+                "projectPath": "C:\\bazeDeDate\\DataAccessLibrary.NETFramework\\DataAccessLibrary.NETFramework\\DataAccessLibrary.NETFramework.csproj"
+              },
+              "C:\\C#\\OOP\\structuriGenericeDeDate\\generics.NETFramework\\generics.NETFramework\\generics.NETFramework.csproj": {
+                "projectPath": "C:\\C#\\OOP\\structuriGenericeDeDate\\generics.NETFramework\\generics.NETFramework\\generics.NETFramework.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\C#\\Desktop\\ComplexStore\\Tests\\Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\C#\\Desktop\\ComplexStore\\Tests\\Tests.csproj",
+        "projectName": "Tests",
+        "projectPath": "C:\\C#\\Desktop\\ComplexStore\\Tests\\Tests.csproj",
+        "packagesPath": "C:\\Users\\Cristi\\.nuget\\packages\\",
+        "outputPath": "C:\\C#\\Desktop\\ComplexStore\\Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cristi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\C#\\Desktop\\ComplexStore\\ComplexStore\\ComplexStore.csproj": {
+                "projectPath": "C:\\C#\\Desktop\\ComplexStore\\ComplexStore\\ComplexStore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.7.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\C#\\OOP\\structuriGenericeDeDate\\generics.NETFramework\\generics.NETFramework\\generics.NETFramework.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\C#\\OOP\\structuriGenericeDeDate\\generics.NETFramework\\generics.NETFramework\\generics.NETFramework.csproj",
+        "projectName": "generics.NETFramework",
+        "projectPath": "C:\\C#\\OOP\\structuriGenericeDeDate\\generics.NETFramework\\generics.NETFramework\\generics.NETFramework.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}
